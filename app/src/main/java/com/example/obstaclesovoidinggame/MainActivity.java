@@ -9,6 +9,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -101,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
             i--;
         } else {
             if(current==randChoose){
+                vibrate(1000);
                 lives--;
                 panel_IMG_engines[lives].setVisibility(View.INVISIBLE);
                 if(lives==0){
