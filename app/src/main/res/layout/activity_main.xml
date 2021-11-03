@@ -8,32 +8,45 @@
     android:background="@drawable/skybackground">
 
     <ImageView
-        android:id="@+id/heart1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:id="@+id/panel_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B0EBF1"/>
+
+    <ImageView
+        android:id="@+id/engine1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
-        android:src="@drawable/ic_heart"
+        android:src="@drawable/ic_engine"
         />
 
     <ImageView
-        android:id="@+id/heart2"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_alignTop="@+id/heart1"
-        android:layout_toEndOf="@+id/heart1"
-        android:src="@drawable/ic_heart"
+        android:id="@+id/engine2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/engine1"
+        android:layout_toEndOf="@+id/engine1"
+        android:src="@drawable/ic_engine"
         />
 
     <ImageView
-        android:id="@+id/heart3"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_alignTop="@+id/heart1"
-        android:layout_toEndOf="@+id/heart2"
-        android:src="@drawable/ic_heart"
+        android:id="@+id/engine3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/engine1"
+        android:layout_toEndOf="@+id/engine2"
+        android:src="@drawable/ic_engine"
+        />
+
+    <ImageView
+        android:id="@+id/engine4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/engine1"
+        android:layout_toEndOf="@+id/engine3"
+        android:src="@drawable/ic_engine"
         />
 
     <LinearLayout
@@ -41,7 +54,7 @@
         android:layout_height="match_parent"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:layout_below="@+id/heart1"
+        android:layout_below="@+id/engine1"
         android:orientation="horizontal"
         android:visibility="visible">
 
@@ -60,7 +73,8 @@
         <ImageView
             android:id="@+id/panel_IMG_s4_l"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_seagull"
             android:visibility="invisible"
             />
@@ -68,7 +82,8 @@
         <ImageView
             android:id="@+id/panel_IMG_s3_l"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_seagull"
             android:visibility="invisible"
             />
@@ -76,7 +91,8 @@
         <ImageView
             android:id="@+id/panel_IMG_s2_l"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_seagull"
             android:visibility="invisible"
             />
@@ -84,7 +100,8 @@
         <ImageView
             android:id="@+id/panel_IMG_s1_l"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_seagull"
             android:visibility="invisible"
             />
@@ -92,15 +109,18 @@
         <ImageView
             android:id="@+id/panel_IMG_s0_left"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_seagull"
             android:visibility="invisible"
             />
 
-        <Button
+        <ImageButton
             android:id="@+id/panel_BTN_left"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_wheel_left"
             android:text="Left" />
 
     </LinearLayout>
@@ -121,7 +141,8 @@
         <ImageView
             android:id="@+id/panel_IMG_s4_m"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_seagull"
             android:visibility="invisible"
             />
@@ -129,7 +150,8 @@
         <ImageView
             android:id="@+id/panel_IMG_s3_m"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_seagull"
             android:visibility="invisible"
             />
@@ -137,7 +159,8 @@
         <ImageView
             android:id="@+id/panel_IMG_s2_m"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_seagull"
             android:visibility="invisible"
             />
@@ -145,7 +168,8 @@
         <ImageView
             android:id="@+id/panel_IMG_s1_m"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_seagull"
             android:visibility="invisible"
             />
@@ -153,14 +177,16 @@
         <ImageView
             android:id="@+id/panel_IMG_s0_mid"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_seagull"
             android:visibility="invisible"
             />
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_airplane"
             android:visibility="invisible"
             />
@@ -183,7 +209,8 @@
         <ImageView
             android:id="@+id/panel_IMG_s4_r"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_seagull"
             android:visibility="invisible"
             />
@@ -191,7 +218,8 @@
         <ImageView
             android:id="@+id/panel_IMG_s3_r"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_seagull"
             android:visibility="invisible"
             />
@@ -199,7 +227,8 @@
         <ImageView
             android:id="@+id/panel_IMG_s2_r"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_seagull"
             android:visibility="invisible"
             />
@@ -207,7 +236,8 @@
         <ImageView
             android:id="@+id/panel_IMG_s1_r"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_seagull"
             android:visibility="invisible"
             />
@@ -215,15 +245,18 @@
         <ImageView
             android:id="@+id/panel_IMG_s0_right"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_seagull"
             android:visibility="invisible"
             />
 
-        <Button
+        <ImageButton
             android:id="@+id/panel_BTN_right"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_wheel_right"
             android:text="Right"
             />
 
